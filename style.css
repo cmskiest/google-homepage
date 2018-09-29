@@ -1,28 +1,36 @@
+
 .searchbar {
     grid-area: searchbar;
     width: 584px;
     height: 44px;
     border: none;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-    background: url("http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png") no-repeat;
+    margin: 18px auto;
 }
 
 #logo {
+    margin-top: 20px;
     grid-area: logo;
+
 }
 
 .container {
+    grid-gap: 10px;
     justify-content: center;
+    justify-items: center;
     display: grid;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1rm);
+    grid-template-columns: repeat(2, 1rm);
     grid-template-areas: 
         "logo logo"
         "searchbar searchbar"
         "search lucky";
 }
 
-.buttons {
+.search, .lucky {
+    display: grid;
+    margin-bottom: auto;
+    margin-top: 5px;
     background-color: #f2f2f2;
     font: bold 13px Arial;
     color: #757575;
@@ -32,8 +40,10 @@
 
 .search {
     grid-area: search;
+    justify-self: right;
 }
 
 .lucky {
     grid-area: lucky;
+    justify-self: left;
 }
