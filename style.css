@@ -54,6 +54,13 @@ a:hover {
         "search lucky";
 }
 
+.voicelogo {
+    float: right;
+    height: 24px;
+    width: 24px;
+    transform: translate(-10px, -35px);
+}
+
 .search, .lucky {
     display: grid;
     margin-bottom: auto;
