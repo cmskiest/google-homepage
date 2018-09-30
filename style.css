@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .searchbar {
     grid-area: searchbar;
     width: 484px;
@@ -20,7 +24,7 @@
 }
 
 a {
-    margin: 10px;
+    margin: 12px;
     color: black;
     text-decoration: none;
     font-size: 13px;
@@ -28,8 +32,12 @@ a {
     font-family: arial;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 #logo {
-    margin-top: 20px;
+    margin-top: 30px;
     grid-area: logo;
 
 }
@@ -72,4 +80,18 @@ input[type="text"] {
 .lucky {
     grid-area: lucky;
     justify-self: left;
+}
+
+.footer {
+    border-top: 1px solid #e4e4e4;
+    padding: 11px;
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    bottom: 0;
+}
+
+.rightfoot {
+    margin-right: 45px;
+    float: right;
 }
